@@ -26,6 +26,9 @@ body {
     color: black;
     font-size:2rem;
     align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .title{
     text-align: center;
