@@ -202,7 +202,7 @@ body {
 
 .displayresult{
     position: fixed;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
     font-size: 2rem;
     top:35%;
     height: 30%;
