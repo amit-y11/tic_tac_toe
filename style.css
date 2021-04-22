@@ -319,8 +319,8 @@ body {
         font-size: 70px;
     }
     .displayresult{
-        width: 90%;
-        left: 5%;
+        width: 100%;
+        left: 0%;
         top: 25%;
     }
 }
