@@ -3,6 +3,7 @@ html{
 }
 body {
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     font-family: 'Reggae One';
     display: flex;
     justify-content: center;
