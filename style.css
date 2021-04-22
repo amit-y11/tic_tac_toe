@@ -3,7 +3,7 @@ html{
 }
 body {
     user-select: none;
-    font-family: 'Reggae One', cursive;
+    font-family: 'Reggae One';
     display: flex;
     justify-content: center;
     background: #dfb02d;
@@ -21,7 +21,7 @@ body {
 }
 .footer{
     position: relative;
-    font-family: cursive;
+    font-family: 'Balsamiq Sans';
     color: black;
     font-size:2rem;
     align-self: center;
@@ -44,7 +44,7 @@ body {
     border: 0px;
     background:#f19327;
     color:red;
-    font-family: 'Reggae One', cursive;
+    font-family: 'Reggae One';
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -86,7 +86,7 @@ body {
     border: 0px;
     background:#f19327;
     color:red;
-    font-family: 'Reggae One', cursive;
+    font-family: 'Reggae One';
     cursor: pointer;
 }
 .dbtn:hover{
@@ -117,7 +117,7 @@ body {
 .status{
     margin-top: 5%;
     margin-bottom: 10%;
-    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Balsamiq Sans';
     display: flex;
     justify-content: center;
     font-size: 3rem;
