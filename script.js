@@ -192,6 +192,7 @@ function displayResult(player, status) {
 }
 function finalResult(id) {
     if (id == "btn4") {
+        currentPlayer = Player1;
         container.style.display = "flex";
         gamecontainer.style.display = "none";
         gamecontainer.style.opacity = '1';
@@ -206,6 +207,8 @@ function finalResult(id) {
             document.getElementById("result").innerHTML = result;
         }
         document.getElementById("status").style.visibility = "visible";
+        document.getElementById("player").style.color = "#F83157";
+        document.getElementById("player").style.textShadow = "1.5px 1.5px #CE2948";
         document.getElementById("player").innerHTML = Player1;
         gameOn = true;
         Draw = false;
@@ -224,6 +227,8 @@ function finalResult(id) {
         gamecontainer.style.opacity = '1';
         document.getElementById("displayresult").style.display = "none";
         document.getElementById("status").style.visibility = "visible";
+        document.getElementById("player").style.color = "#F83157";
+        document.getElementById("player").style.textShadow = "1.5px 1.5px #CE2948";
         document.getElementById("player").innerHTML = Player1;
         if (Draw == false)
             document.getElementById(winnerLine).style.visibility = 'hidden';
