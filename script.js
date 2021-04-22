@@ -178,12 +178,20 @@ function displayResult(player, status) {
     if (status == "won") {
         document.getElementById("winner").innerText = player;
         if (player == 'X') {
+            if(typeOfgame==1)
+            document.getElementById("result").innerText = "You Won the Game!";
+            else{
             document.getElementById("winner").style.textShadow = "1.5px 1.5px #CE2948";
             document.getElementById("winner").style.color = "#F83157";
+            }
         }
         else {
+            if(typeOfgame==1)
+            document.getElementById("result").innerText = "You Lost the Game!";
+            else{
             document.getElementById("winner").style.textShadow = "1.5px 1.5px #318DB5";
             document.getElementById("winner").style.color = "#3BA8D7";
+            }
         }
     }
     else {
@@ -203,9 +211,7 @@ function finalResult(id) {
         document.getElementById("displayresult").style.display = "none";
         if (Draw == false)
             document.getElementById(winnerLine).style.visibility = 'hidden';
-        if (Draw == true) {
-            document.getElementById("result").innerHTML = result;
-        }
+        document.getElementById("result").innerHTML = result;
         document.getElementById("status").style.visibility = "visible";
         document.getElementById("player").style.color = "#F83157";
         document.getElementById("player").style.textShadow = "1.5px 1.5px #CE2948";
@@ -232,9 +238,7 @@ function finalResult(id) {
         document.getElementById("player").innerHTML = Player1;
         if (Draw == false)
             document.getElementById(winnerLine).style.visibility = 'hidden';
-        if (Draw == true) {
-            document.getElementById("result").innerHTML = result;
-        }
+        document.getElementById("result").innerHTML = result;
         gameOn = true;
         Draw = false;
         for (i = 0; i < 9; i++) {
