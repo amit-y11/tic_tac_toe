@@ -129,6 +129,7 @@ body {
 }
 .status span{
     color: red;
+    text-shadow: 1.5px 1.5px #CE2948;
 }
 .game-box{
     display: flex;
