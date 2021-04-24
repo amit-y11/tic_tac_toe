@@ -52,13 +52,13 @@ const cellClicked = (e) => {
             e.target.style.color = "#F83157";
             e.target.style.textShadow = "3px 3px #CE2948";
             if (isPlayerWon(currentPlayer)) {
-                displayResult(Player1, "won");
+                setTimeout(()=>displayResult(Player1, "won"),1000);
                 document.getElementById("status").style.visibility = "hidden";
                 gameOn = false;
                 return;
             }
             if (checkDraw()) {
-                displayResult(player, "draw");
+                setTimeout(()=>displayResult(player, "draw"),1000);
                 document.getElementById("status").style.visibility = "hidden";
                 gameOn = false;
                 return;
@@ -72,13 +72,13 @@ const cellClicked = (e) => {
             e.target.style.color = "#3BA8D7";
             e.target.style.textShadow = "3px 3px #318DB5";
             if (isPlayerWon(currentPlayer)) {
-                displayResult(Player2, "won");
+                setTimeout(()=>displayResult(Player2, "won"),1000);
                 document.getElementById("status").style.visibility = "hidden";
                 gameOn = false;
                 return;
             }
             if (checkDraw()) {
-                displayResult(player, "draw");
+                setTimeout(()=>displayResult(player, "draw"),1000);
                 document.getElementById("status").style.visibility = "hidden";
                 gameOn = false;
                 return;
@@ -291,7 +291,7 @@ function computerTurn() {
     cell.style.color = "#3BA8D7";
     cell.style.textShadow = "3px 3px #318DB5";
     if (isPlayerWon(currentPlayer)) {
-        displayResult(Player2, "won");
+        setTimeout(()=>displayResult(Player2, "won"),1000);
         document.getElementById("status").style.visibility = "hidden";
         gameOn = false;
         return;
@@ -315,7 +315,7 @@ function aiTurn(){
     cell.style.color = "#3BA8D7";
     cell.style.textShadow = "3px 3px #318DB5";
     if (isPlayerWon(currentPlayer)) {
-        displayResult(Player2, "won");
+        setTimeout(()=>displayResult(Player2, "won"),1000);
         document.getElementById("status").style.visibility = "hidden";
         gameOn = false;
         return;
