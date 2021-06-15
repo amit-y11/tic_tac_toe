@@ -21,14 +21,42 @@ body {
     flex-direction: column;
 }
 .footer{
-    position: relative;
-    font-family: 'Balsamiq Sans';
-    color: black;
-    font-size:2rem;
-    align-self: center;
+    margin-top: 100px;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size:2rem;
+    width: 100%;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    z-index: 0;
+}
+.footer h3{
+    font-family: 'Balsamiq Sans',sans-serif;
+    color: black;
+    align-self: center;
+    display: inline-block;
     justify-content: center;
     flex-direction: column;
+    margin: 10px;
+}
+.footer h3 .fa-heart{
+    color: red;
+}
+.icons a{
+    color:#3d3d3d;
+}
+#github:hover{
+    color: black;
+}
+#telegram:hover{
+    color: #2CA3E0;
+}
+#twitter:hover{
+    color: #1A91DA;
 }
 .title{
     text-align: center;
